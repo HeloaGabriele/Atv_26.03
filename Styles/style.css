@@ -263,19 +263,41 @@ body {
     transition: 0.7s;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
+@media only screen and (max-width: 750px) {
+    .cloud:nth-child(1) {
+        top: 2%;
+        left: -25%;
+    }
+    .cloud:nth-child(2) {
+        top: 2%;
+        left: 0%;
+    }
+    .cloud:nth-child(3) {
+        top: 8.5%;
+        left: -25%;
+    }
+    .container {
         width: 100%;
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
     }
     .image_container {
         border-radius: 30px 30px 0 0;
+        height: 110vh; 
     }
     .image_container h1 {
         font-size: 30px;
     }
     .image_container p {
-
+        font-size: 10px;
+    }
+    .image_container h1, 
+    .image_container p {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    }
+    #cadatroForm {
+        padding: 15px;
     }
 }  
